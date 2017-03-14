@@ -1,0 +1,108 @@
+id	Country	Change_rate
+AFG	Afghanistan	0.563
+DZA	Algeria	0
+AGO	Angola	0.15
+ARG	Argentina	0
+ARM	Armenia	0
+AZE	Azerbaijan	0
+BHS	Bahamas	0
+BGD	Bangladesh	1.644
+BLZ	Belize	-0.05
+BEN	Benin	-0.032
+BTN	Bhutan	0.267
+BOL	Bolivia (Plurinational State of)	0.008
+BWA	Botswana	1.952
+BRA	Brazil	-0.193
+BFA	Burkina Faso	0.44
+BDI	Burundi	0.107
+CIV	Côte d'Ivoire	0.481
+169	Cabo Verde	0.182
+KHM	Cambodia	0.18
+CMR	Cameroon	-1
+CAF	Central African Republic	1.537
+TCD	Chad	0.211
+CHN	China	-0.349
+COL	Colombia	-0.211
+160	Comoros	-0.959
+COG	Congo	0.534
+CRI	Costa Rica	0
+PRK	Democratic People's Republic of Korea	-0.269
+COD	Democratic Republic of the Congo	0.485
+DJI	Djibouti	-1
+DOM	Dominican Republic	-0.143
+ECU	Ecuador	-0.345
+EGY	Egypt	0
+SLV	El Salvador	0
+GNQ	Equatorial Guinea	0.555
+ERI	Eritrea	0.443
+ETH	Ethiopia	-0.199
+GAB	Gabon	0.101
+GMB	Gambia	-0.31
+GEO	Georgia	0
+GHA	Ghana	1.084
+GTM	Guatemala	-0.206
+GIN	Guinea	2.125
+GNB	Guinea-Bissau	0.712
+GUY	Guyana	-0.608
+HTI	Haiti	-0.142
+HND	Honduras	-0.377
+IND	India	0.25
+IDN	Indonesia	-0.266
+IRN	Iran (Islamic Republic of)	-0.253
+IRQ	Iraq	0
+JAM	Jamaica	0
+KEN	Kenya	0.203
+KGZ	Kyrgyzstan	0
+LAO	Lao People's Democratic Republic	0.261
+LBR	Liberia	-0.305
+MDG	Madagascar	-0.056
+MWI	Malawi	1.268
+MYS	Malaysia	0.077
+MLI	Mali	0.492
+MRT	Mauritania	8.978
+MEX	Mexico	0.325
+MOZ	Mozambique	1.373
+MMR	Myanmar	-0.394
+NAM	Namibia	2.24
+NPL	Nepal	-0.256
+NIC	Nicaragua	-0.026
+NER	Niger	-0.17
+NGA	Nigeria	0
+OMN	Oman	0
+PAK	Pakistan	-0.023
+PAN	Panama	0.24
+PNG	Papua New Guinea	0.004
+PRY	Paraguay	0
+PER	Peru	0.488
+PHL	Philippines	-0.247
+KOR	Republic of Korea	0.454
+RUS	Russian Federation	0
+RWA	Rwanda	0.673
+186	Sao Tome and Principe	-0.81
+SAU	Saudi Arabia	-0.118
+SEN	Senegal	-0.232
+SLE	Sierra Leone	-0.192
+SLB	Solomon Islands	-0.281
+SOM	Somalia	0.485
+ZAF	South Africa	0.354
+SDS	South Sudan	-1
+LKA	Sri Lanka	0
+SDN	Sudan	0.804
+SUR	Suriname	-0.487
+SWZ	Swaziland	1.069
+SYR	Syrian Arab Republic	0
+TJK	Tajikistan	-0.333
+THA	Thailand	0.139
+TLS	Timor-Leste	-0.666
+TGO	Togo	0.281
+TUR	Turkey	0
+TKM	Turkmenistan	0
+UGA	Uganda	1.417
+TZA	United Republic of Tanzania	-0.561
+UZB	Uzbekistan	0
+VUT	Vanuatu	-0.588
+VEN	Venezuela (Bolivarian Republic of)	0.153
+VNM	Viet Nam	-0.08
+YEM	Yemen	-0.343
+ZMB	Zambia	0
+ZWE	Zimbabwe	0.268
