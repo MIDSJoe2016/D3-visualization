@@ -1,108 +1,108 @@
-id	Country	Change_rate
-AFG	Afghanistan	0.563
-DZA	Algeria	0
-AGO	Angola	0.15
-ARG	Argentina	0
-ARM	Armenia	0
-AZE	Azerbaijan	0
-BHS	Bahamas	0
-BGD	Bangladesh	1.644
-BLZ	Belize	-0.05
-BEN	Benin	-0.032
-BTN	Bhutan	0.267
-BOL	Bolivia (Plurinational State of)	0.008
-BWA	Botswana	1.952
-BRA	Brazil	-0.193
-BFA	Burkina Faso	0.44
-BDI	Burundi	0.107
-CIV	Côte d'Ivoire	0.481
-169	Cabo Verde	0.182
-KHM	Cambodia	0.18
-CMR	Cameroon	-1
-CAF	Central African Republic	1.537
-TCD	Chad	0.211
-CHN	China	-0.349
-COL	Colombia	-0.211
-160	Comoros	-0.959
-COG	Congo	0.534
-CRI	Costa Rica	0
-PRK	Democratic People's Republic of Korea	-0.269
-COD	Democratic Republic of the Congo	0.485
-DJI	Djibouti	-1
-DOM	Dominican Republic	-0.143
-ECU	Ecuador	-0.345
-EGY	Egypt	0
-SLV	El Salvador	0
-GNQ	Equatorial Guinea	0.555
-ERI	Eritrea	0.443
-ETH	Ethiopia	-0.199
-GAB	Gabon	0.101
-GMB	Gambia	-0.31
-GEO	Georgia	0
-GHA	Ghana	1.084
-GTM	Guatemala	-0.206
-GIN	Guinea	2.125
-GNB	Guinea-Bissau	0.712
-GUY	Guyana	-0.608
-HTI	Haiti	-0.142
-HND	Honduras	-0.377
-IND	India	0.25
-IDN	Indonesia	-0.266
-IRN	Iran (Islamic Republic of)	-0.253
-IRQ	Iraq	0
-JAM	Jamaica	0
-KEN	Kenya	0.203
-KGZ	Kyrgyzstan	0
-LAO	Lao People's Democratic Republic	0.261
-LBR	Liberia	-0.305
-MDG	Madagascar	-0.056
-MWI	Malawi	1.268
-MYS	Malaysia	0.077
-MLI	Mali	0.492
-MRT	Mauritania	8.978
-MEX	Mexico	0.325
-MOZ	Mozambique	1.373
-MMR	Myanmar	-0.394
-NAM	Namibia	2.24
-NPL	Nepal	-0.256
-NIC	Nicaragua	-0.026
-NER	Niger	-0.17
-NGA	Nigeria	0
-OMN	Oman	0
-PAK	Pakistan	-0.023
-PAN	Panama	0.24
-PNG	Papua New Guinea	0.004
-PRY	Paraguay	0
-PER	Peru	0.488
-PHL	Philippines	-0.247
-KOR	Republic of Korea	0.454
-RUS	Russian Federation	0
-RWA	Rwanda	0.673
-186	Sao Tome and Principe	-0.81
-SAU	Saudi Arabia	-0.118
-SEN	Senegal	-0.232
-SLE	Sierra Leone	-0.192
-SLB	Solomon Islands	-0.281
-SOM	Somalia	0.485
-ZAF	South Africa	0.354
-SDS	South Sudan	-1
-LKA	Sri Lanka	0
-SDN	Sudan	0.804
-SUR	Suriname	-0.487
-SWZ	Swaziland	1.069
-SYR	Syrian Arab Republic	0
-TJK	Tajikistan	-0.333
-THA	Thailand	0.139
-TLS	Timor-Leste	-0.666
-TGO	Togo	0.281
-TUR	Turkey	0
-TKM	Turkmenistan	0
-UGA	Uganda	1.417
-TZA	United Republic of Tanzania	-0.561
-UZB	Uzbekistan	0
-VUT	Vanuatu	-0.588
-VEN	Venezuela (Bolivarian Republic of)	0.153
-VNM	Viet Nam	-0.08
-YEM	Yemen	-0.343
-ZMB	Zambia	0
-ZWE	Zimbabwe	0.268
+id	name	Change_rate	Continent
+AFG	Afghanistan	0.563	Asia
+DZA	Algeria	0	Africa
+AGO	Angola	0.15	Africa
+ARG	Argentina	0	South America
+ARM	Armenia	0	Europe
+AZE	Azerbaijan	0	Europe
+BHS	Bahamas	0	North America
+BGD	Bangladesh	1.644	Asia
+BLZ	Belize	-0.05	North America
+BEN	Benin	-0.032	Africa
+BTN	Bhutan	0.267	Asia
+BOL	Bolivia	0.008	South America
+BWA	Botswana	1.952	Africa
+BRA	Brazil	-0.193	South America
+BFA	Burkina	0.44	Africa
+BDI	Burundi	0.107	Africa
+CIV	Côte d'Ivoire	0.481	Africa
+169	Cabo Verde	0.182	Africa
+KHM	Cambodia	0.18	Asia
+CMR	Cameroon	-1	Africa
+CAF	Central African Republic	1.537	Africa
+TCD	Chad	0.211	Africa
+CHN	China	-0.349	Asia
+COL	Colombia	-0.211	South America
+160	Comoros	-0.959	Africa
+COG	Congo	0.534	Africa
+CRI	Costa Rica	0	North America
+PRK	Democratic People's Republic of Korea	-0.269	Asia
+COD	Democratic Republic of the Congo	0.485	Africa
+DJI	Djibouti	-1	Africa
+DOM	Dominican Republic	-0.143	North America
+ECU	Ecuador	-0.345	South America
+EGY	Egypt	0	Africa
+SLV	El Salvador	0	North America
+GNQ	Equatorial Guinea	0.555	Africa
+ERI	Eritrea	0.443	Africa
+ETH	Ethiopia	-0.199	Africa
+GAB	Gabon	0.101	Africa
+GMB	Gambia	-0.31	Africa
+GEO	Georgia	0	Europe
+GHA	Ghana	1.084	Africa
+GTM	Guatemala	-0.206	North America
+GIN	Guinea	2.125	Africa
+GNB	Guinea-Bissau	0.712	Africa
+GUY	Guyana	-0.608	South America
+HTI	Haiti	-0.142	North America
+HND	Honduras	-0.377	North America
+IND	India	0.25	Asia
+IDN	Indonesia	-0.266	Asia
+IRN	Iran	-0.253	Asia
+IRQ	Iraq	0	Asia
+JAM	Jamaica	0	North America
+KEN	Kenya	0.203	Africa
+KGZ	Kyrgyzstan	0	Asia
+LAO	Laos	0.261	Asia
+LBR	Liberia	-0.305	Africa
+MDG	Madagascar	-0.056	Africa
+MWI	Malawi	1.268	Africa
+MYS	Malaysia	0.077	Asia
+MLI	Mali	0.492	Africa
+MRT	Mauritania	8.978	Africa
+MEX	Mexico	0.325	North America
+MOZ	Mozambique	1.373	Africa
+MMR	Myanmar	-0.394	Asia
+NAM	Namibia	2.24	Africa
+NPL	Nepal	-0.256	Asia
+NIC	Nicaragua	-0.026	North America
+NER	Niger	-0.17	Africa
+NGA	Nigeria	0	Africa
+OMN	Oman	0	Asia
+PAK	Pakistan	-0.023	Asia
+PAN	Panama	0.24	North America
+PNG	Papua New Guinea	0.004	Oceania
+PRY	Paraguay	0	South America
+PER	Peru	0.488	South America
+PHL	Philippines	-0.247	Asia
+KOR	Republic of Korea	0.454	Asia
+RUS	Russian Federation	0	Asia
+RWA	Rwanda	0.673	Africa
+186	Sao Tome and Principe	-0.81	Africa
+SAU	Saudi Arabia	-0.118	Asia
+SEN	Senegal	-0.232	Africa
+SLE	Sierra Leone	-0.192	Africa
+SLB	Solomon Islands	-0.281	Oceania
+SOM	Somalia	0.485	Africa
+ZAF	South Africa	0.354	Africa
+SDS	South Sudan	-1	Africa
+LKA	Sri Lanka	0	Asia
+SDN	Sudan	0.804	Africa
+SUR	Suriname	-0.487	South America
+SWZ	Swaziland	1.069	Africa
+SYR	Syrian Arab Republic	0	Asia
+TJK	Tajikistan	-0.333	Asia
+THA	Thailand	0.139	Asia
+TLS	Timor-Leste	-0.666	Asia
+TGO	Togo	0.281	Africa
+TUR	Turkey	0	Asia
+TKM	Turkmenistan	0	Asia
+UGA	Uganda	1.417	Africa
+TZA	Tanzania	-0.561	Africa
+UZB	Uzbekistan	0	Asia
+VUT	Vanuatu	-0.588	Oceania
+VEN	Venezuela	0.153	South America
+VNM	VietNam	-0.08	Asia
+YEM	Yemen	-0.343	Asia
+ZMB	Zambia	0	Africa
+ZWE	Zimbabwe	0.268	Africa

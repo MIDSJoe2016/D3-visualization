@@ -69,13 +69,16 @@
     h1{font-size:20px;
      height:20px;}
 
-/*    text{
-      pointer-events:none;
-    }*/
+  
+    .control-group {
+    padding-top: 10px;
+    margin: 10px;
+}
 
     .details{
       color:white;
     }
+
 
 </style>
 <body>
@@ -85,14 +88,25 @@
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="d3-tip.js"></script>
 <script>
+
+//var world = 1
+var Contnt = "initial";
+
+function marlaria(Contnt) {
+if (Contnt != "initial") { world =0;
+  d3.select("#the_SVG_ID").remove();
+}
+else {world = 1;}
 var format = d3.format("%");
+
+
 
 // Set tooltips
 var tip = d3.tip()
             .attr('class', 'd3-tip')
             .offset([-10, 0])
             .html(function(d) {
-              return "<strong>Country: </strong><span class='details'>" + d.properties.name + "<br></span>" + "<strong>Change_rate: </strong><span class='details'>" + format(d.Change_rate) +"</span>";
+              return "<strong>Country: </strong><span class='details'>" + d.properties.name + "<br></span>" + "<strong>Change_rate: </strong><span class='details'>" + format(d.Change_rate) +"<br></span>" + "<strong>Continent: </strong><span class='details'>" + d.Continent +"</span>";
             })
 
 var margin = {top: 0, right: 0, bottom: 0, left: 0},
@@ -109,6 +123,7 @@ var path = d3.geo.path();
 
 var svg = d3.select("body")
             .append("svg")
+            .attr("id","the_SVG_ID")
             .attr("width", width)
             .attr("height", height)
             .append('g')
@@ -118,27 +133,46 @@ var projection = d3.geo.mercator()
                    .scale(130)
                   .translate( [width / 2, height / 1.5]);
 
-var path = d3.geo.path().projection(projection);
+var zoom = d3.behavior.zoom()
+    .scaleExtent([1, 8])
+    .on("zoom", zoomed);
 
+var path = d3.geo.path().projection(projection);
 
 svg.call(tip);
 
 queue()
     .defer(d3.json, "world_countries.json")
+    //.defer(d3.json, "africa.json")
     .defer(d3.tsv, "rate.tsv")
     .await(ready);
 
-function ready(error, data, Change_rate) {
+var g = svg.append("g");
+
+svg
+    .call(zoom)
+    .call(zoom.event);
+
+function ready(error, data, Addinfo) {
   var Change_rateById = {};
+  var ContinentById = {};
 
-  Change_rate.forEach(function(d) { Change_rateById[d.id] = +d.Change_rate; });
-  data.features.forEach(function(d) { d.Change_rate = Change_rateById[d.id] });
+  Addinfo.forEach(function(d) { Change_rateById[d.id] = +d.Change_rate; ContinentById[d.id] = d.Continent;});
+  data.features.forEach(function(d) { d.Change_rate = Change_rateById[d.id]; d.Continent = ContinentById[d.id]; });
+  //var Contnt = "Asia";
 
-  svg.append("g")
-      .attr("class", "countries")
+  //svg.append("g")
+      g.attr("class", "countries")
     .selectAll("path")
       .data(data.features)
     .enter().append("path")
+    .filter(function(d) { 
+      if (world == 1) {
+        return true;
+      } else {
+        return d.Continent == Contnt;
+      }
+     })
       .attr("d", path)
       .style("fill", function(d) { return color(Change_rateById[d.id]); })
       .style('stroke', 'white')
@@ -164,11 +198,13 @@ function ready(error, data, Change_rate) {
             .style("stroke-width",0.3);
         });
 
-  svg.append("path")
+
+  g.append("path")
       .datum(topojson.mesh(data.features, function(a, b) { return a.id !== b.id; }))
        // .datum(topojson.mesh(data.features, function(a, b) { return a !== b; }))
       .attr("class", "names")
       .attr("d", path);
+
     }
 
   var legend = svg.selectAll(".legend")
@@ -191,10 +227,38 @@ function ready(error, data, Change_rate) {
   .attr("y", function(d, i){ return height - (i*ls_h) - ls_h - 4;})
   .text(function(d, i){ return legend_labels[i]; });
 
+function zoomed() {
+  g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+}
 
 
+d3.select(self.frameElement).style("height", height + "px");
 
-
+}
+if (Contnt == "initial") {
+marlaria(Contnt);
+}
 </script>
+
+<div class="control-group">
+    <button onclick="marlaria('Africa')">
+        Africa
+    </button>
+    <button onclick="marlaria('Asia')">
+        Asia
+    </button>
+    <button onclick="marlaria('Europe')">
+        Europe
+    </button>
+    <button onclick="marlaria('Oceania')">
+        Oceania
+    </button>
+    <button onclick="marlaria('North America')">
+        North America
+    </button>
+    <button onclick="marlaria('South America')">
+        South America
+    </button>
+</div>
 </body>
 </html>
